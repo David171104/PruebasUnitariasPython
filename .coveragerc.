@@ -1,0 +1,15 @@
+[coverage:run]
+# Excluir comentarios y docstrings de la cobertura
+ignore_errors = True
+branch = True
+
+[coverage:report]
+# Excluir comentarios y docstrings en el reporte
+exclude_lines =
+    # Excluir docstrings
+    def __.*__:
+    """.*
+    # Excluir comentarios de línea
+    #.*   
+    # Excluir las líneas vacías
+    ^\s*$
